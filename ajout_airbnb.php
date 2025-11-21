@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un logement Airbnb</title>
+    <link rel="stylesheet" href="airbnb.css">
 </head>
-
 <body>
-<h1>Ajouter un logement Airbnb</h1>
+    <h1>Ajouter un logement Airbnb</h1>
 
 <form action="traitement.php" method="POST" enctype="multipart/form-data">
 
@@ -21,12 +23,14 @@
     <label>Propriétaire : </label>
     <input type="text" name="proprietaire" required><br>
 
-    <label>Image : </label>
-    <input type="file" name="image" accept="image/*" required><br>
+    <label>URL de l'image :</label>
+<input type="url" name="image_url" placeholder="https://exemple.com/photo.jpg" required><br>
+
 
     <button type="submit">Ajouter</button>
 
 </form>
 
+    
 </body>
 </html>
