@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php
-require_once 'config.php';
+require_once 'conf.php';
 $triOptions = ['name' => 'Nom', 'neighbourhood_group_cleansed' => 'Ville', 'price' => 'Prix', 'host_name' => 'Propriétaire'];
 
 $tri = isset($_GET['tri']) && array_key_exists($_GET['tri'], $triOptions)
